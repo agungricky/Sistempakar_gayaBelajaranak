@@ -20,16 +20,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',function(){
+Route::get('/home', function () {
     return view('Home.home');
 });
 
-Route::get('/tes',function(){
+Route::get('/tes', function () {
     return view('Home.tes');
 });
 
-Route::get('/hasil',function(){
+Route::get('/hasil', function () {
     return view('Home.hasil');
+});
 
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
