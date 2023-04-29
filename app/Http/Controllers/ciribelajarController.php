@@ -4,17 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class homeController extends Controller
+class ciribelajarController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('Home.home');
+        // mengambil data dari tabel 
+        $ciribelajar = tb_ciri_belajar::all();
 
-         
-    
+        // mengirim data ke view
+        return view('tes',['tes' => $ciribelajar]);
+    }
+    }
+
     /**
      * Show the form for creating a new resource.
      */

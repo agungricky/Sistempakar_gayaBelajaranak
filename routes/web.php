@@ -25,6 +25,8 @@ Route::get('/tes',function(){
     return view('Home.tes');
 });
 
+// Route::get('/tes','')
+
 Route::get('/hasil',function(){
     return view('Home.hasil');
 });

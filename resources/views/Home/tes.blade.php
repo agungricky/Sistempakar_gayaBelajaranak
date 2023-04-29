@@ -14,7 +14,10 @@
         </div>
         <div class="question">
                 <p>1. Bagaimana Cara anak mengingat ?</p>
-                <input type="checkbox"> Mudah mengingat hal yang dilihat <br>
+                @foreach ($ciribelajar as $ciri)
+                 <input type="checkbox">{{$ciri->ciri_gaya_belajar}} <br>
+                @endforeach
+                
                 <input type="checkbox"> Mudah mengingat hal yang didengar <br>
                 <input type="checkbox"> Mudah mengingat hal yang dilakukan <br><br>
     
