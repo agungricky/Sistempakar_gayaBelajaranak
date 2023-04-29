@@ -1,0 +1,30 @@
+.container{
+    background-color: rgb(201, 193, 193);
+    height: 100%;
+}
+
+.header{
+    background-color: rgb(3, 63, 45);
+    height: 100px;
+    color: whitesmoke;
+}
+
+h2{
+    padding: 50px;
+}
+
+.question{
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.hasil{
+    background-color: rgb(3, 63, 45);
+    height: 50px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
