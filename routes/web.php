@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\solusiController;
+use App\Http\Controllers\tipeBelajarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +30,17 @@ Route::get('/tes',function(){
 
 Route::get('/hasil',function(){
     return view('Home.hasil');
+
+Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('login', [AuthController::class, 'login']);
+
+Route::get('/tipe_Belajar', function () {
+    return view('tipe_belajar.index');
+});
+
+Route::get('solusi', [solusiController::class, 'index']);
+Route::get('/solusi/{kode}', [solusiController::class, 'show']);
+
+Route::get('/infoAplikasi', function () {
+    return view('tipe_belajar.infoAplikasi');
 });

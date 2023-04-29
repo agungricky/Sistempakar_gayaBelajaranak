@@ -1,0 +1,60 @@
+body {
+    background-color: #00ade0;
+}
+
+img {
+    margin-top: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+.borderku {
+    size: 12px;
+    box-shadow: rgb(82, 79, 79) 0px 0px 7px 20px;
+}
+
+.shadow {
+    width: 10%;
+    height: 50px;
+    background-color: #252525;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    transform: scaleX(2) scaleY(0.5);
+}
+
+#Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 30%;
+    height: 50vh;
+    background-color: #3f86ab;
+    /* opacity: 0.5; */
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+#warning {
+    text-align: center;
+}
+
+#warning span {
+    color: red;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#warning a {
+    color: white;
+}
