@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\tes;
 use Illuminate\Support\Facades\DB;
 
 class tesController extends Controller
@@ -16,8 +17,6 @@ class tesController extends Controller
         $sampel = DB::table('tb_sampel_variabel')->get();
 
         return view("home.tes", compact('pertanyaan', 'sampel'));
-
-        // return view("home.tes", compact('sampel'));
     }
 
     /**

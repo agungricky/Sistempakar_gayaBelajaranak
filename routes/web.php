@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\solusiController;
-use App\Http\Controllers\tipeBelajarController;
 use App\Http\Controllers\tesController;
+use App\Http\Controllers\tipeBelajarController;
 
 
 /*
@@ -30,9 +30,9 @@ Route::get('/home', function () {
 //     return view('Home.tes');
 // });
 
-Route::get('/tes', [tesController::class, 'index']); 
+Route::get('/tes', [tesController::class, 'index']);
 
-Route::get('/hasil',function(){
+Route::get('/hasil', function () {
     return view('Home.hasil');
 });
 
