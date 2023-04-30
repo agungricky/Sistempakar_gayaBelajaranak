@@ -37,7 +37,7 @@
                 <div class="col-md-3">
                     <div class="card">
                         <img src="images/list.png" alt="Gambar Card 1">
-                        <a href="{{}}"><h2>Tes Gaya Belajar</h2></a>
+                        <h2>Tes Gaya Belajar</h2>
                     </div>
                 </div>
                 <div class="col-md-3">
