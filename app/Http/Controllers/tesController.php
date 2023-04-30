@@ -3,24 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Models\Ciribelajar;
-use Illuminate\Support\Facedes\DB;
+use Illuminate\Support\Facades\DB;
 
-class ciribelajarController extends Controller
+class tesController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // mengambil data dari tabel 
         $pertanyaan = DB::table('tb_ciri_belajar')->get();
-        
+        $sampel = DB::table('tb_sampel_variabel')->get();
 
-        // mengirim data ke view
-        return view('Home.tes', compact('pertanyaan'));
+        return view("home.tes", compact('pertanyaan', 'sampel'));
+
+        // return view("home.tes", compact('sampel'));
     }
-    
 
     /**
      * Show the form for creating a new resource.

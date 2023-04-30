@@ -14,58 +14,95 @@
         </div>
         <div class="question">
                 <p>1. Bagaimana Cara anak mengingat ?</p>
-
-
-                 {{-- <input type="checkbox">{{ $p->ciri_gaya_belajar }} <br> --}}
-
-                
-                {{-- <input type="checkbox"> Mudah mengingat hal yang didengar <br>
-                <input type="checkbox"> Mudah mengingat hal yang dilakukan <br><br> --}}
-    
+                    @foreach ($pertanyaan -> slice(0, 3) as $p)
+                         <input type="radio" name="radio1">{{$p -> ciri_gaya_belajar}} <br>
+                     @endforeach
+                    <br>
                 keterangan: <br>
-                <input type="radio" name="radio2">jarang <input type="radio" name="radio2">kadang <input type="radio" name="radio2">sering <input type="radio" name="radio2">sangat sering   
+                    @foreach ($sampel as $s)
+                       <input type="radio" name="radio2">{{ $s -> himpunan_fuzzy}}
+                    @endforeach
+
+                  
         </div>
         
         <div class="question">
             <p>2. Dibawah ini apa yang anak anda sukai?</p>
-            <input type="radio" name="radio1"> Sangat menyukai lukisan<br>
-            <input type="radio" name="radio1"> Sangat menyukai musik<br>
-            <input type="radio" name="radio1"> Sangat menyukai tarian<br><br>
-
+                @foreach ($pertanyaan -> slice(3, 3) as $p)
+                         <input type="radio" name="radio1">{{$p -> ciri_gaya_belajar}} <br>
+                @endforeach
+            
+            <br>
             keterangan: <br>
             <input type="radio" name="radio2">jarang <input type="radio" name="radio2">kadang <input type="radio" name="radio2">sering <input type="radio" name="radio2">sangat sering 
         </div>
 
         <div class="question">
             <p>3. Apa yang sering anak anda perhatikan ketika bertemu dengan orang lain?</p>
-            <input type="radio" name="radio1"> Cenderung memperhatikan orang pada wajah dan pakaian yang dikenakan<br>
-            <input type="radio" name="radio1"> Cenderung memperhatikan orang pada pembicaraan<br>
-            <input type="radio" name="radio1"> Cenderung memperhatikan orang pada perilaku dan gerak geriknya<br><br>
-
+                @foreach ($pertanyaan -> slice(6, 3) as $p)
+                         <input type="radio" name="radio1">{{$p -> ciri_gaya_belajar}} <br>
+                @endforeach
+                <br>
             keterangan: <br>
             <input type="radio" name="radio2">jarang <input type="radio" name="radio2">kadang <input type="radio" name="radio2">sering <input type="radio" name="radio2">sangat sering 
         </div>
 
         <div class="question">
             <p>4. Dibawah ini apa yang membuat anak anda tertarik atau sukai?</p>
-            <input type="radio" name="radio1"> Suka diajari oleh guru dengan cara menggambarkan suatu object di papan tulis<br>
-            <input type="radio" name="radio1"> Suka diajari oleh guru dengan cara menjelaskan dengan suara indah<br>
-            <input type="radio" name="radio1"> Suka diajari oleh guru dengan cara mempraktekkan dan menyentuh object yang diajarkan<br><br>
+            @foreach ($pertanyaan -> slice(10, 3) as $p)
+            <input type="radio" name="radio1">{{$p -> ciri_gaya_belajar}} <br>
+            @endforeach
+            <br>
 
             keterangan: <br>
             <input type="radio" name="radio2">jarang <input type="radio" name="radio2">kadang <input type="radio" name="radio2">sering <input type="radio" name="radio2">sangat sering 
         </div>
 
         <div class="question">
-            <p>4. Dibawah ini apa yang membuat anak anda tertarik atau sukai?</p>
-            <input type="radio" name="radio1"> Mementingkan penampilan<br>
-            <input type="radio" name="radio1"> Mementingkan kemampuan berbicara dengan baik<br>
-            <input type="radio" name="radio1"> Mementingkan pergerakan fisik<br><br>
+            <p>5. Dibawah ini apa yang membuat anak anda tertarik atau sukai?</p>
+            @foreach ($pertanyaan -> slice(13, 3) as $p)
+            <input type="radio" name="radio1">{{$p -> ciri_gaya_belajar}} <br>
+            @endforeach
+            <br>
 
             keterangan: <br>
             <input type="radio" name="radio2">jarang <input type="radio" name="radio2">kadang <input type="radio" name="radio2">sering <input type="radio" name="radio2">sangat sering 
         </div>
 
+        <div class="question">
+            <p>6. ?</p>
+            @foreach ($pertanyaan -> slice(16, 3) as $p)
+            <input type="radio" name="radio1">{{$p -> ciri_gaya_belajar}} <br>
+            @endforeach
+            <br>
+
+            keterangan: <br>
+            <input type="radio" name="radio2">jarang <input type="radio" name="radio2">kadang <input type="radio" name="radio2">sering <input type="radio" name="radio2">sangat sering 
+        </div>
+
+        <div class="question">
+            <p>7. ?</p>
+            @foreach ($pertanyaan -> slice(19, 3) as $p)
+            <input type="radio" name="radio1">{{$p -> ciri_gaya_belajar}} <br>
+            @endforeach
+            <br>
+
+            keterangan: <br>
+            <input type="radio" name="radio2">jarang <input type="radio" name="radio2">kadang <input type="radio" name="radio2">sering <input type="radio" name="radio2">sangat sering 
+        </div>
+
+        <div class="question">
+            <p>8. ?</p>
+            @foreach ($pertanyaan -> slice(22, 3) as $p)
+            <input type="radio" name="radio1">{{$p -> ciri_gaya_belajar}} <br>
+            @endforeach
+            <br>
+
+            keterangan: <br>
+            <input type="radio" name="radio2">jarang <input type="radio" name="radio2">kadang <input type="radio" name="radio2">sering <input type="radio" name="radio2">sangat sering 
+        </div>
+
+       
         <div class="hasil">
             <h3>CEK HASIL</h3>
         </div>
