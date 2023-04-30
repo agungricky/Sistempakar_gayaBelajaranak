@@ -34,29 +34,37 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/list.png" alt="Gambar Card 1">
-                        <h2>Tes Gaya Belajar</h2>
+                    <div class="col-md-3">
+                        <a href="tes">
+                            <div class="card">
+                                <img src="images/list.png" alt="Gambar Card 1">
+                                <h2>Tes Gaya Belajar</h2>
+                            </div>
+                        </a>
                     </div>
+                <div class="col-md-3">
+                    <a href="tipe_Belajar">
+                        <div class="card">
+                            <img src="images/belajar.avif" alt="Gambar Card 2">
+                            <h2>Tipe Gaya Belajar</h2>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/belajar.avif" alt="Gambar Card 2">
-                        <h2>Tipe Gaya Belajar</h2>
-                    </div>
+                    <a href="infoAplikasi">
+                        <div class="card">
+                            <img src="images/info.avif" alt="Gambar Card 3">
+                            <h2>Informasi</h2>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/info.avif" alt="Gambar Card 3">
-                        <h2>Informasi</h2>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="images/exit.avif" alt="Gambar Card 4">
-                        <h2>Keluar</h2>
-                    </div>
+                    <a href="">
+                        <div class="card">
+                            <img src="images/exit.avif" alt="Gambar Card 4">
+                            <h2>Keluar</h2>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
