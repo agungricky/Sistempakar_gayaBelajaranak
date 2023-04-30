@@ -14,7 +14,9 @@ class tesController extends Controller
     public function index()
     {
         $pertanyaan = DB::table('tb_ciri_belajar')->get();
-        return view('Home.tes', compact('pertanyaan'));
+        $sampel = DB::table('tb_sampel_variabel')->get();
+
+        return view("home.tes", compact('pertanyaan', 'sampel'));
     }
 
     /**
