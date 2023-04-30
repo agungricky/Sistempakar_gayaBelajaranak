@@ -3,18 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
-class homeController extends Controller
+class tesController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('Home.home');
+        $pertanyaan = DB::table('tb_ciri_belajar')->get();
+        $sampel = DB::table('tb_sampel_variabel')->get();
 
-         
-    
+        return view("home.tes", compact('pertanyaan', 'sampel'));
+
+        // return view("home.tes", compact('sampel'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */
