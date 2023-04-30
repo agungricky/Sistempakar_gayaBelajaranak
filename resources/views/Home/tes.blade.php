@@ -14,20 +14,21 @@
         </div>
         <div class="question">
                 <p>1. Bagaimana Cara anak mengingat ?</p>
-                <input type="checkbox"> Mudah mengingat hal yang dilihat <br>
-                <input type="checkbox"> Mudah mengingat hal yang didengar <br>
-                <input type="checkbox"> Mudah mengingat hal yang dilakukan <br><br>
-    
+                @foreach ($pertanyaan -> slice(0, 3) as $p)
+                    <input type="checkbox"> {{$p -> ciri_gaya_belajar}} <br>
+                @endforeach
+
+                <br>
                 keterangan: <br>
                 <input type="checkbox">jarang <input type="checkbox">kadang <input type="checkbox">sering <input type="checkbox">sangat sering   
         </div>
         
         <div class="question">
             <p>2. Dibawah ini apa yang anak anda sukai?</p>
-            <input type="checkbox"> Sangat menyukai lukisan<br>
-            <input type="checkbox"> Sangat menyukai musik<br>
-            <input type="checkbox"> Sangat menyukai tarian<br><br>
-
+            @foreach ($pertanyaan -> slice(3, 3) as $p)
+                <input type="checkbox"> {{$p -> ciri_gaya_belajar}} <br>
+            @endforeach
+            <br>
             keterangan: <br>
             <input type="checkbox">jarang <input type="checkbox">kadang <input type="checkbox">sering <input type="checkbox">sangat sering 
         </div>
