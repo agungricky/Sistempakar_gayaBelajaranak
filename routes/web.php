@@ -49,3 +49,6 @@ Route::get('/solusi/{kode}', [solusiController::class, 'show']);
 Route::get('/infoAplikasi', function () {
     return view('tipe_belajar.infoAplikasi');
 });
+
+Route::post('/submit-form', [tesController::class, 'submitForm'])->name('submit-form');
+Route::post('/process-form', [tesController::class, 'processForm'])->name('process-form');
