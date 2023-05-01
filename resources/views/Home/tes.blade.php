@@ -81,7 +81,7 @@
         </div>
 
         <div class="question">
-            <p>6. ?</p>
+            <p>6. Bagaimana kah tingkat konsentrasi anak anda?</p>
             @foreach ($pertanyaan -> slice(16, 3) as $p)
             <input type="radio" name="radio6" value="{{$p->kode}}"> {{$p -> ciri_gaya_belajar}} <br>
             @endforeach
@@ -94,7 +94,7 @@
         </div>
 
         <div class="question">
-            <p>7. ?</p>
+            <p>7. Apa yang anak anda sukai ketika belajar</p>
             @foreach ($pertanyaan -> slice(19, 3) as $p)
             <input type="radio" name="radio7" value="{{$p->kode}}"> {{$p -> ciri_gaya_belajar}} <br>
             @endforeach
@@ -107,7 +107,7 @@
         </div>
 
         <div class="question">
-            <p>8. ?</p>
+            <p>8. kendala seperti apa yang anak anda alami ketika belajar?</p>
             @foreach ($pertanyaan -> slice(22, 3) as $p)
             <input type="radio" name="radio8" value="{{$p->kode}}"> {{$p -> ciri_gaya_belajar}} <br>
             @endforeach
