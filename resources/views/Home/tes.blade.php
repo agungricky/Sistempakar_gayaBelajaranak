@@ -23,7 +23,7 @@
                     <br>
                 keterangan: <br>
                     @foreach ($sampel as $s)
-                       <input type="radio" name="radio1_1" value="{{$s->domain}}"> {{ $s -> himpunan_fuzzy}}
+                       <input type="radio" name="radio1_1" value="{{$s->himpunan_fuzzy}}"> {{ $s -> himpunan_fuzzy}}
                     @endforeach
 
                   
@@ -38,7 +38,7 @@
             <br>
             keterangan: <br>
                 @foreach ($sampel as $s)
-                    <input type="radio" name="radio2_2" value="{{$s->domain}}" > {{ $s -> himpunan_fuzzy}}
+                    <input type="radio" name="radio2_2" value="{{$s->himpunan_fuzzy}}" > {{ $s -> himpunan_fuzzy}}
                  @endforeach
         </div>
 
@@ -50,72 +50,72 @@
                 <br>
             keterangan: <br>
                 @foreach ($sampel as $s)
-                    <input type="radio" name="radio3_3" value="{{$s->domain}}"> {{ $s -> himpunan_fuzzy}}
+                    <input type="radio" name="radio3_3" value="{{$s->himpunan_fuzzy}}"> {{ $s -> himpunan_fuzzy}}
                  @endforeach
         </div>
 
         <div class="question">
             <p>4. Dibawah ini apa yang membuat anak anda tertarik atau sukai?</p>
-            @foreach ($pertanyaan -> slice(10, 3) as $p)
+            @foreach ($pertanyaan -> slice(9, 3) as $p)
                 <input type="radio" name="radio4" value="{{$p->kode}}"> {{$p -> ciri_gaya_belajar}} <br>
             @endforeach
             <br>
 
             keterangan: <br>
                 @foreach ($sampel as $s)
-                    <input type="radio" name="radio4_4" value="{{$s->domain}}"> {{ $s -> himpunan_fuzzy}}
+                    <input type="radio" name="radio4_4" value="{{$s->himpunan_fuzzy}}"> {{ $s -> himpunan_fuzzy}}
                  @endforeach
         </div>
 
         <div class="question">
             <p>5. Dibawah ini apa yang membuat anak anda tertarik atau sukai?</p>
-            @foreach ($pertanyaan -> slice(13, 3) as $p)
+            @foreach ($pertanyaan -> slice(12, 3) as $p)
             <input type="radio" name="radio5" value="{{$p->kode}}"> {{$p -> ciri_gaya_belajar}} <br>
             @endforeach
             <br>
 
             keterangan: <br>
                 @foreach ($sampel as $s)
-                    <input type="radio" name="radio5_5" value="{{$s->domain}}"> {{ $s -> himpunan_fuzzy}}
+                    <input type="radio" name="radio5_5" value="{{$s->himpunan_fuzzy}}"> {{ $s -> himpunan_fuzzy}}
                 @endforeach
         </div>
 
         <div class="question">
             <p>6. Bagaimana kah tingkat konsentrasi anak anda?</p>
-            @foreach ($pertanyaan -> slice(16, 3) as $p)
+            @foreach ($pertanyaan -> slice(15, 3) as $p)
             <input type="radio" name="radio6" value="{{$p->kode}}"> {{$p -> ciri_gaya_belajar}} <br>
             @endforeach
             <br>
 
             keterangan: <br>
                 @foreach ($sampel as $s)
-                    <input type="radio" name="radio6_6" value="{{$s->domain}}"> {{ $s -> himpunan_fuzzy}}
+                    <input type="radio" name="radio6_6" value="{{$s->himpunan_fuzzy}}"> {{ $s -> himpunan_fuzzy}}
                 @endforeach
         </div>
 
         <div class="question">
             <p>7. Apa yang anak anda sukai ketika belajar</p>
-            @foreach ($pertanyaan -> slice(19, 3) as $p)
+            @foreach ($pertanyaan -> slice(18, 3) as $p)
             <input type="radio" name="radio7" value="{{$p->kode}}"> {{$p -> ciri_gaya_belajar}} <br>
             @endforeach
             <br>
 
             keterangan: <br>
                 @foreach ($sampel as $s)
-                    <input type="radio" name="radio7_7" value="{{$s->domain}}"> {{ $s -> himpunan_fuzzy}}
+                    <input type="radio" name="radio7_7" value="{{$s->himpunan_fuzzy}}"> {{ $s -> himpunan_fuzzy}}
                 @endforeach
         </div>
 
         <div class="question">
             <p>8. kendala seperti apa yang anak anda alami ketika belajar?</p>
-            @foreach ($pertanyaan -> slice(22, 3) as $p)
+            @foreach ($pertanyaan -> slice(21, 3) as $p)
             <input type="radio" name="radio8" value="{{$p->kode}}"> {{$p -> ciri_gaya_belajar}} <br>
             @endforeach
             <br>
 
             keterangan: <br>
                 @foreach ($sampel as $s)
-                    <input type="radio" name="radio8_8" value="{{$s->domain}}"> {{ $s -> himpunan_fuzzy}}
+                    <input type="radio" name="radio8_8" value="{{$s->himpunan_fuzzy}}"> {{ $s -> himpunan_fuzzy}}
                 @endforeach
         </div>
 

@@ -10,16 +10,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>Gaya Belajar yang cocok untuk anak anda adalah</h1>
-    @if(isset($message))
-        <div class="alert alert-success warning" role="alert">
-            {{ $message }}
-        </div>
-        <div class="alert alert-warning" role="alert">
-        </div>   
-    @endif <br>
+        <h1 class="fw-bold">Gaya Belajar <br> yang tepat untuk anak adalah</h1>
 
-        <div class="tombol">
+            <div class="alert alert-success warning text-center" role="alert">
+                <h3># {{ $message }}</h3>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <p>{{$text}}</p>
+            </div>   
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Kode</td>
+                    <td>Keterangan</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($rule as $rl)
+                    <tr>
+                        <td>{{$rl->kode}}</td>
+                        <td>{{$rl->Keterangan}}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+
+        <div class="tombol mb-5">
             <a href="home"><button type="button" class="btn btn-primary">Home</button></a>
             <a href="tes"><button type="button" class="btn btn-secondary">Coba lagi</button></a>
             <a href="tipe_Belajar"><button type="button" class="btn btn-success">Solusi</button></a>
